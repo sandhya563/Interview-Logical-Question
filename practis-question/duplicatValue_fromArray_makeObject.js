@@ -5,16 +5,14 @@ function createObject(arr) {
     for (let i = 0; i < arr.length; i++) {
         const item = arr[i];
         if (!newObj[item]) {
-            newObj[item] = 1;
-
-            
+            newObj[item] = 1; 
         } else {
             newObj[item]++;
-
-            
         }
     }
     return newObj;
 }
 const resultVlue = createObject(arr);
 console.log(resultVlue);
+
+
