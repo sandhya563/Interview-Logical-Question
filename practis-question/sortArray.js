@@ -5,7 +5,7 @@ function arrayShort(){
             if(arry[j] > arry[j +1]){
                 const newValue = arry[j];
                 arry[j] = arry[j + 1];
-                arry[j +1] = newValue;
+                arry[j + 1] = newValue;
             }
         }
     }

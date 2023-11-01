@@ -1,7 +1,7 @@
 // Array of numbers maximum and minimum 
 const array = [-1, 2, -5, 8, 16];
 let max = array[0]
-min = array[0];
+let min = array[0];
 for (let i = 0; i < array.length; i++) {
     if (array[i] > max) { 
         max = array[i]; }
