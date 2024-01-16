@@ -22,24 +22,24 @@
 
 
 /// FINDE DUPLICATE CHARECTOR COUNT AND INDEX POSITION FROM STING
-function findDuplicateCharCountAndIndexPositionWithoutHasOwnProperty(string) {
-    const duplicateCharCountAndIndexPosition = {};
+function findDuplicateCharCountIndexPosition(string) {
+    const duplicateCharCountPosition = {};
     for (let i = 0; i < string.length; i++) {
       const char = string[i];
-      if (duplicateCharCountAndIndexPosition[char] === undefined) {
+      if (duplicateCharCountPosition[char] === undefined) {
 
-        duplicateCharCountAndIndexPosition[char] = {
+        duplicateCharCountPosition[char] = {
           count: 1,
           indexPositions: [i],
         };
       } else {
-        duplicateCharCountAndIndexPosition[char].count++;
-        duplicateCharCountAndIndexPosition[char].indexPositions.push(i);
+        duplicateCharCountPosition[char].count++;
+        duplicateCharCountPosition[char].indexPositions.push(i);
       }
     }
-    return duplicateCharCountAndIndexPosition;
+    return duplicateCharCountPosition;
   }
 const string = "abcabcbb";
-const duplicateCharCountAndIndexPosition = findDuplicateCharCountAndIndexPositionWithoutHasOwnProperty(string);
+const duplicateCharCountPositionObjcet = findDuplicateCharCountIndexPosition(string);
 
-console.log(duplicateCharCountAndIndexPosition);
+console.log(duplicateCharCountPositionObjcet);

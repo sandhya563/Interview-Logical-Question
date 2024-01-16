@@ -30,14 +30,16 @@
             if (nestedArray[i][j] > max) {
                 max = nestedArray[i][j];
             }
-            else if (nestedArray[i][j] < min) {
-                min = nestedArray[i][j];
-            }
+            // else if (nestedArray[i][j] < min) {
+            //     min = nestedArray[i][j];
+            // }
         }
     }
-    return {max, min};
+    // return {max,min}
+    return {max};
 }
 const nestedArray = [[1, 5, 3],[8, 2, 4],[7, 6, 9]];
-const {max, min} = findMinMax(nestedArray);
+const {max} = findMinMax(nestedArray);
+// const {max, min} = findMinMax(nestedArray);
 console.log("Maximum value:", max);
-console.log("Minimum value:", min);
+// console.log("Minimum value:", min)
